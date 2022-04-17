@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs/CnCRemastered/v17
+/.vs/CnC_Remastered_TD_OriginalHard/v17
+/.vs/CnCTDRAMapEditor/v17
+/CnCTDRAMapEditor/obj/Debug
+/CnCTDRAMapEditor/obj/Release
+/bin/Win32
+/REDALERT/Win32/Release
+/TIBERIANDAWN/Win32/Release
