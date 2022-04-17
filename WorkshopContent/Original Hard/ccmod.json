@@ -1,0 +1,11 @@
+{
+	"name": "Original Hard (PrePatch)",
+	"description": "This Mod recreates the REAL hard difficulty from the first month of the game, before it was made easier.
+
+Don't get me wrong, this was brutal - Dark Souls mode kinda ^-^",
+	"author": "Lunak",
+	"load_order": 2,
+	"version_low": 0,
+	"version_high": 50,
+	"game_type": "TD"
+}
