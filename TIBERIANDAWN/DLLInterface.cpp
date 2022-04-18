@@ -2035,18 +2035,18 @@ void DLLExportClass::Config(const CNCRulesDataStruct& rules)
 	}
 
 	//Inject Original Hard Settings - Keep It Small and Simple
-	Rule.Diff[2].FirepowerBias = float(0.8);	//0.9
-	Rule.Diff[2].GroundspeedBias = float(0.8);	//0.9
-	Rule.Diff[2].AirspeedBias = float(0.8);		//0.9
-	Rule.Diff[2].BuildSpeedBias = float(1.0);
-	Rule.Diff[2].ArmorBias = float(1.2);		//1.05
-	Rule.Diff[2].ROFBias = float(1.2);			//1.05
-	Rule.Diff[2].CostBias = float(1.0);
-	Rule.Diff[2].RepairDelay = float(0.05);
-	Rule.Diff[2].BuildDelay = float(0.1);
-	Rule.Diff[2].IsBuildSlowdown = 1;
-	Rule.Diff[2].IsWallDestroyer = 0;			//Switched
-	Rule.Diff[2].IsContentScan = 0;				//Switched
+	Rule.Diff[DIFF_HARD].FirepowerBias = 0.8f;	//0.9
+	Rule.Diff[DIFF_HARD].GroundspeedBias = 0.8f;	//0.9
+	Rule.Diff[DIFF_HARD].AirspeedBias = 0.8f;		//0.9
+	Rule.Diff[DIFF_HARD].BuildSpeedBias = 1.0f;
+	Rule.Diff[DIFF_HARD].ArmorBias = 1.2f;		//1.05
+	Rule.Diff[DIFF_HARD].ROFBias = 1.2f;			//1.05
+	Rule.Diff[DIFF_HARD].CostBias = 1.0f;
+	Rule.Diff[DIFF_HARD].RepairDelay = 0.05f;
+	Rule.Diff[DIFF_HARD].BuildDelay = 0.1f;
+	Rule.Diff[DIFF_HARD].IsBuildSlowdown = 1;
+	Rule.Diff[DIFF_HARD].IsWallDestroyer = 0;			//Switched
+	Rule.Diff[DIFF_HARD].IsContentScan = 0;				//Switched
 }
 
 
@@ -7242,10 +7242,10 @@ void DLLExportClass::Debug_Spawn_Unit(const char* object_name, int x, int y, boo
 			Map.Set_Cursor_Shape(Map.PendingObject->Occupy_List());
 
 			//OutList.Add(EventClass(EventClass::PLACE, RTTI_BUILDING, (CELL)(cell + Map.ZoneOffset)));
-	}
+		}
 #endif		
 		return;
-}
+	}
 
 
 	UnitType unit_type = UnitTypeClass::From_Name(object_name);

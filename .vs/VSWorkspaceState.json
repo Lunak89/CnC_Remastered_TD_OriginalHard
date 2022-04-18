@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TIBERIANDAWN",
+    "\\TIBERIANDAWN\\RESOURCE"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\TIBERIANDAWN\\RESOURCE\\TiberianDawn.rc",
   "PreviewInSolutionExplorer": false
 }
